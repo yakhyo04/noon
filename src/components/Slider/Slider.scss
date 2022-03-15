@@ -1,0 +1,53 @@
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    &__div{
+        position: relative;
+    }
+    &_1{
+        width: 1000px;
+        position: absolute;
+        top: -9px;
+        left: -34px;
+    }
+    &__img{
+    max-width: 100%;
+    }
+    &__fashion{
+        width: 233px;
+        height: 210px;
+        display: flex;
+        position: relative;
+        top: -7px;
+        left: -88px;
+    }
+}
+
+
+@media (max-width: 1280px){
+    .slider{
+        // width: 1015px;
+        display: block;
+        width: 90vw;
+        &__div{
+            width: 90vw;
+        }
+        &_1{
+            width: 90vw;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        &__img{
+            width: auto;
+        }
+        &__fashion{
+            width: 30vw;
+            height: auto;
+            top: 0;
+            left: 0;
+        }
+    }
+}

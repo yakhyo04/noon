@@ -1,0 +1,34 @@
+.category{
+    width: 90vw;
+    background-color: white;
+    // position: relative;
+    display: flex;
+    &__list{
+        width: 80vw;
+        font-weight: bold;
+        padding: 0;
+    }
+    &__image{
+        width: 100%;
+    }
+    &__item{
+        display: flex; 
+    }
+    &__link{
+        text-decoration: none;
+        color: #000;
+    }
+    &__all{
+        color: #0a7dca;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px){
+    .category{
+        &__list{
+            width: 50vw;
+        }
+    }
+}
